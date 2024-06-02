@@ -1,3 +1,4 @@
+// execute greeter
 var g = G$("Tushar", "Chemate");
 
-console.log(g);
+g.greet().setLang("mr").greet(true);
