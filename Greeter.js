@@ -67,6 +67,16 @@
       // lets make this chainable
       return this;
     },
+
+    // what if I want to change language on the fly ..
+
+    setLang: function (lang) {
+      this.language = lang;
+      // should validate the supported language
+      this.validate();
+
+      return this;
+    },
   };
 
   Greeter.init = function (firstName, lastName, language) {
