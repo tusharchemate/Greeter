@@ -60,8 +60,13 @@
       return this;
     },
 
-
-    
+    log: function () {
+      if (console) {
+        console.log(logMessages[this.language] + ": " + this.fullName());
+      }
+      // lets make this chainable
+      return this;
+    },
   };
 
   Greeter.init = function (firstName, lastName, language) {
