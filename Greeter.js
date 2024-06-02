@@ -3,6 +3,26 @@
     return new Greeter.init(firstName, lastName, language);
   };
 
+  var supportedLangs = ["en", "es", "mr"];
+
+  var greetings = {
+    en: "Hello",
+    es: "Hola",
+    mr: "नमस्ते",
+  };
+
+  var formalGreetings = {
+    en: "Greetings",
+    es: "Saludos",
+    mr: "नमस्कार",
+  };
+
+  var logMessages = {
+    en: "Logged In",
+    es: "Inicio Sesión",
+    mr: "लॉग इन झाले",
+  };
+
   Greeter.prototype = {};
 
   Greeter.init = function (firstName, lastName, language) {
